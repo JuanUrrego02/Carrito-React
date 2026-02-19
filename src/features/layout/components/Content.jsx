@@ -1,23 +1,30 @@
+import React from "react";
 import { useState } from "react";
 
 export function Content() {
   const [catalogo] = useState([
     {
       id: 1,
-      nombre: "Auriculares Bluetooth",
-      precio: 159900,
-      stock: 5,
-      imagen:
-        "https://images.unsplash.com/photo-1518444065439-e933c06ce9cd?auto=format&fit=crop&w=400&q=60",
+      nombre: "Camiseta Clemont; Negra",
+      precio: 140000,
+      stock: 10,
+      img: "/img/clemont.jpg",
     },
     {
       id: 2,
-      nombre: "Teclado Mecánico",
+      nombre: "Pantalón Purple",
       precio: 249000,
-      stock: 2,
-      imagen:
-        "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=400&q=60",
+      stock: 5,
+      img: "/img/purple.jpg",
     },
+    {
+      id: 3,
+      nombre: "Gorra Hugo Boss; Vaca-Negra",
+      precio: 350000,
+      stock: 3,
+      img: "/img/gorra.jpg",
+    },
+    
   ]);
 
   return (
@@ -69,12 +76,13 @@ export function Content() {
                 }}
               >
                 <img
-                  src={p.imagen}
+                  src={p.img}
                   alt={p.nombre}
                   style={{
                     width: "100%",
-                    height: "160px",
+                    height: "250px",
                     objectFit: "cover",
+                    objectPosition: "center"
                   }}
                 />
 
@@ -100,8 +108,8 @@ export function Content() {
                         p.stock > 3
                           ? "#198754"
                           : p.stock > 0
-                          ? "#ffc107"
-                          : "#6c757d",
+                            ? "#ffc107"
+                            : "#6c757d",
                       color: "#fff",
                       padding: "5px 10px",
                       fontSize: "12px",
@@ -113,8 +121,8 @@ export function Content() {
                     {p.stock > 3
                       ? "En stock"
                       : p.stock > 0
-                      ? "Pocas unidades"
-                      : "Agotado"}
+                        ? "Pocas unidades"
+                        : "Agotado"}
                   </span>
 
                   {/* Botones */}
