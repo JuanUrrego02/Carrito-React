@@ -8,23 +8,22 @@ export function Content() {
       nombre: "Camiseta Clemont; Negra",
       precio: 140000,
       stock: 10,
-      img: "/img/clemont.jpg",
+      img: `${import.meta.env.BASE_URL}img/clemont.jpg`,
     },
     {
       id: 2,
       nombre: "Pantalón Purple",
       precio: 249000,
       stock: 5,
-      img: "/img/purple.jpg",
+      img: `${import.meta.env.BASE_URL}img/purple.jpg`,
     },
     {
       id: 3,
       nombre: "Gorra Hugo Boss; Vaca-Negra",
       precio: 350000,
       stock: 3,
-      img: "/img/gorra.jpg",
+      img: `${import.meta.env.BASE_URL}img/gorra.jpg`,
     },
-    
   ]);
 
   return (

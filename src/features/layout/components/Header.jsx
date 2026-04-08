@@ -29,7 +29,7 @@ export const Header = ({ cantidadProductos }) => {
         }}
       >
         <img
-          src="/img/logo.png"
+          src={`${import.meta.env.BASE_URL}img/logo.png`}
           alt="Logo Manchester"
           style={{
             height: "45px",
