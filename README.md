@@ -1,142 +1,44 @@
-# React + Vite
+🧠 Proyecto Aplicación React
+📖 Descripción
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una aplicación web desarrollada con React, una biblioteca de JavaScript utilizada para crear interfaces de usuario interactivas.
+La aplicación fue creada utilizando Vite como herramienta de construcción para mejorar la velocidad de desarrollo y rendimiento.
 
-Currently, two official plugins are available:
+El proyecto incluye configuración de rutas para navegar entre diferentes páginas, manejo de componentes y uso de hooks de React para gestionar el estado de la aplicación.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🚀 Características Principales
+Enrutamiento mediante React Router DOM para navegar entre diferentes páginas.
+Componentes reutilizables creados con React.
+Gestión de estado utilizando Hooks de React.
+Integración de Bootstrap para estilos y diseño de la interfaz.
+Configuración con Vite para un desarrollo rápido y eficiente.
+🖥️ Interfaz Gráfica
 
-## React Compiler
+La aplicación cuenta con una interfaz sencilla y organizada que incluye:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Barra de navegación (Navbar) para acceder a las diferentes secciones.
+Página principal donde se muestran los elementos principales del proyecto.
+Secciones con componentes React que muestran información utilizando props.
+Diseño responsive utilizando Bootstrap para adaptarse a diferentes pantallas.
+🏗️ Arquitectura del Proyecto
+.
+├── index.html
+├── package.json
+├── vite.config.js
+├── src
+│   ├── App.jsx
+│   ├── Routex.jsx
+│   ├── main.jsx
+│   └── components
+│       └── ...
+├── public
+│   └── ...
 
-## Expanding the ESLint configuration
+La arquitectura está basada en una estructura modular donde los componentes y las rutas se organizan dentro de la carpeta src, permitiendo mantener el proyecto ordenado y fácil de mantener.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+👨‍💻 Datos Importantes del Autor
 
-Descripción
-
-Manchester Clothing Store es una aplicación web desarrollada para la gestión de una tienda de ropa.
-Permite visualizar productos, agregar nuevos artículos al catálogo, editar información existente y eliminar productos.
-
-Su propósito principal es facilitar la administración básica de inventario en una tienda virtual de manera sencilla e intuitiva.
-
-Características Principales
-
-✔️ Visualización dinámica de productos.
-
-✔️ Muestra nombre, precio en COP y estado de stock.
-
-✔️ Indicadores visuales de disponibilidad:
-
-🟢 En stock
-
-🟡 Pocas unidades
-
-✔️ Formulario para agregar nuevos productos.
-
-✔️ Botones para editar y eliminar productos.
-
-✔️ Contador dinámico de productos en el carrito (0 productos).
-
-✔️ Diseño moderno y limpio.
-
-Interfaz Gráfica
-
-La interfaz está dividida en tres secciones principales:
-
-🔹 1. Barra Superior (Header)
-
-Nombre de la tienda: Manchester Clothing Store
-
-Subtítulo: Tu tienda de ropa favorita
-
-Menú de navegación: Inicio | Props | Carrito (contador de productos)
-
-🔹 2. Sección de Productos
-
-Tarjetas individuales por producto.
-
-Cada tarjeta incluye:
-
-Imagen
-
-Nombre del producto
-
-Precio en COP
-
-Estado del stock
-
-Botones: Editar y Eliminar
-
-Diseño basado en tarjetas (Cards), con separación clara y estilo minimalista.
-
-🔹 3. Panel Lateral – Agregar Producto
-
-Formulario con campos:
-
-Nombre
-
-Precio
-
-Stock
-
-URL Imagen
-
-Botón: Agregar al catálogo
-
-Permite registrar nuevos productos de forma rápida.
-
-Arquitectura del Proyecto
-
-Basado en lo que se observa (localhost:5173 → típico de Vite):
-
-🔹 Tecnologías Probables
-
-React (por estructura de componentes)
-
-Vite (servidor de desarrollo)
-
-CSS o framework como Bootstrap/Tailwind
-
-Manejo de estado con useState
-
-🔹 Estructura Posible
-src/
- ├── components/
- │    ├── Header.jsx
- │    ├── ProductCard.jsx
- │    ├── ProductList.jsx
- │    └── ProductForm.jsx
- │
- ├── App.jsx
- ├── main.jsx
- └── styles.css
-🔹 Patrón Utilizado
-
-Arquitectura basada en componentes.
-
-Flujo de datos unidireccional.
-
-Estado central en el componente principal (App).
-
-Props para pasar información a componentes hijos.
-
-Datos Importantes del Autor
-
-(Aquí puedes completar con tu información personal si es para entregar como proyecto académico)
-
-Nombre del desarrollador: Juan David Urrego Patiño
-
-Programa de formación: ADSO (Análisis y Desarrollo de Software)
-
-Institución: SENA
-
+Nombre: Juan Urrego
+Proyecto: Aplicación React con Vite
+Tecnologías utilizadas: React, React Router DOM, Bootstrap y Vite
 Año: 2026
-
-Instructor: Carlos Andres Castro Jaramillo
-
-Tecnologías utilizadas: React + Vite + CSS
-
-Tipo de proyecto: CRUD básico de inventario
