@@ -1,6 +1,6 @@
 // import './shared/styles/App.css'
 import React, { useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 import { Header } from "./features/layout/components/Header";
 import { Content } from "./features/layout/components/Content";

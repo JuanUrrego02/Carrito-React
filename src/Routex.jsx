@@ -1,13 +1,13 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Props from "./pages/Props";
 
 function AppRoutes() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/props" element={<Props />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
